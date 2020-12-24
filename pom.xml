@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.Andrei</groupId>
+    <artifactId>Demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <restAshured>4.1.2</restAshured>
+    </properties>
+    <profiles>
+        <profile>
+            <id>Nume</id>
+            <activation>
+                <activeByDefault>
+                    true
+                </activeByDefault>
+            </activation>
+        <properties>
+            <junitVersion>4.11</junitVersion>
+        </properties>
+        </profile> </profiles>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junitVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restAshured}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+
+</project>

@@ -17,7 +17,7 @@
 * git fetch&git pull (make sure local=origin);
 * create a new branch on local by using git checkout -b {branchname};
 * apply the stash by using git controler;
-* git commit & git push;
+* git commit & git push; {UI}
 * open the new repository from origin;
 * create pull request from new repository to master;
 * merge the pull request;

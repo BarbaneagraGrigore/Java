@@ -14,13 +14,13 @@ public class Main {
         System.out.print("Enter the value of num2: ");
         num2 = sc.nextInt();
 
-        System.out.println("Before swapping numbers: "+num1 +"  "+ num2);
+        System.out.println("Before swapping numbers: "+num1 +" , "+ num2);
 
         num3 = num1;
         num1 = num2;
         num2 = num3;
 
-        System.out.println("After swapping: "+num1 +"   " + num2);
+        System.out.println("After swapping: "+num1 +" , " + num2);
     }
 }
 

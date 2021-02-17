@@ -7,12 +7,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("PLease enter an integer number: ");
         int input = scanner.nextInt();
+
+        scanner.close();
+
         System.out.println("The entered number is: " + input);
 
-        int i=input;
-        while(0<=i){
+        int i = 0;
+        while(i<=input){
             System.out.println(i);
-            i--;
+            i++;
         }
 
 

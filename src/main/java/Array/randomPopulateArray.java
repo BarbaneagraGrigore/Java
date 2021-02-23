@@ -14,8 +14,8 @@ public class randomPopulateArray {
         s.close();
 
         int myArray[] = new int[size];
-
-        for (int i = 0; i < size; i++) {
+// we can use myArray.length or size for i<
+        for (int i = 0; i < myArray.length; i++) {
             myArray[i] = random.nextInt();
         }
         System.out.println("Contents of the array are: " + Arrays.toString(myArray));

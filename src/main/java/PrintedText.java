@@ -1,6 +1,5 @@
 public class PrintedText {
-    public static String printText(String text){
-        System.out.println(text);
-        return text;
+    public static void printText(String text){
+        System.out.println("The text you entered is: " + text);
     }
 }

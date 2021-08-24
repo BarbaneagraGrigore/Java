@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <restAshured>4.1.2</restAshured>
+        <restAshured>4.4.0</restAshured>
     </properties>
     <profiles>
         <profile>
@@ -21,19 +21,31 @@
                     true
                 </activeByDefault>
             </activation>
-        <properties>
-            <junitVersion>4.11</junitVersion>
-        </properties>
-        </profile> </profiles>
+            <properties>
+                <junitVersion>4.11</junitVersion>
+            </properties>
+        </profile>
+    </profiles>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junitVersion}</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
 
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -41,7 +53,6 @@
             <version>${restAshured}</version>
             <scope>test</scope>
         </dependency>
-
 
     </dependencies>
 

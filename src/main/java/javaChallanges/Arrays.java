@@ -1,12 +1,32 @@
 package javaChallanges;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Arrays {
 
-    private static final Scanner scanner = new Scanner(System.in);
     private static final Random random = new Random();
+
+    public static void reverseArray(int[] array) {
+        int maxIndex = array.length - 1;
+        int halfArray = array.length / 2;
+
+        for (int i = 0; i < halfArray; i++) {
+            int temporary = array[i];
+            array[i] = array[maxIndex - i];
+            array[maxIndex - i] = temporary;
+        }
+        System.out.println("Reversed array = " + java.util.Arrays.toString(array));
+    }
+
+    public static void randomPopulateDoubleArray(int size, int size2) {
+        int[][] array = new int[size][size2];
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size2; j++) {
+                array[i][j] = random.nextInt();
+            }
+        }
+        System.out.println("Contents of the double array are: " + java.util.Arrays.deepToString(array));
+    }
 
     public static void randomPopulateArray(int size) {
         int[] array = new int[size];

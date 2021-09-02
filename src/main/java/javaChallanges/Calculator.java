@@ -22,6 +22,27 @@ public class Calculator {
         System.out.println(number + " " + operator + " " + number2 + " = " + result);
     }
 
+    public static float multiply(float firstNumber, float secondNumber) {
+        if (firstNumber >= 0 && firstNumber <= 100 && secondNumber >= 0 && secondNumber <= 100) {
+            return firstNumber * secondNumber;
+        } else return 0;
+    }
+
+    public static float subtract(float firstNumber, float secondNumber) {
+        if (secondNumber >= 0 && firstNumber > secondNumber) {
+            return firstNumber - secondNumber;
+        } else return -1;
+    }
+
+    public static float divide(float numberToBeDivided, float divisor) {
+        if (divisor >= 0 && numberToBeDivided >= divisor) {
+            if (divisor == 0) {
+                throw new IllegalArgumentException("Argument 'divisor' is 0");
+            }
+            return numberToBeDivided / divisor;
+        } else return 0;
+    }
+
     //    calculates the sum of the even digits from the number
     public static void sumEvenDigits(int number) {
         System.out.println("The number you entered is: " + number);

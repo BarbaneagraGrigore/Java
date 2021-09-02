@@ -1,4 +1,4 @@
-package udemy;
+package udemy.room;
 
 public class Ceiling {
     private final int width;

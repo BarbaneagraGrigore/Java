@@ -1,4 +1,4 @@
-package udemy;
+package udemy.room;
 
 public class Dimensions {
     private int height;

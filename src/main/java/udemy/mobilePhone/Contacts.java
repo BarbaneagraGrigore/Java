@@ -1,4 +1,4 @@
-package udemy;
+package udemy.mobilePhone;
 
 public class Contacts {
     private String name;

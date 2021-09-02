@@ -1,4 +1,4 @@
-package udemy;
+package udemy.bank;
 
 import java.util.ArrayList;
 

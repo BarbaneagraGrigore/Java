@@ -16,9 +16,19 @@ public class CalculatorFeetAndInchesToCentimeters {
     public static double calcFeetAndInchesToCentimeters(double inches) {
         if (inches >= 0) {
             double feet = inches / 12;
-            double remainingInches = (int) inches % 12;
-            System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches + " remaining inches");
-            return calcFeetAndInchesToCentimeters(feet, remainingInches);
+            double remainingInches = 0;
+            double remainingFeet;
+            double wholeFeet;
+            if (feet - Math.floor(feet) == 0) {
+                System.out.println(inches + " inches is equal to " + feet + " feet.");
+                return calcFeetAndInchesToCentimeters(feet, remainingInches);
+            } else {
+                remainingFeet = feet % 10;
+                wholeFeet = feet - remainingFeet;
+                remainingInches = inches - wholeFeet * 12;
+                System.out.println(inches + " inches is equal to " + wholeFeet + " feet and " + remainingInches + " remaining inches");
+            }
+            return calcFeetAndInchesToCentimeters(wholeFeet, remainingInches);
         } else {
             return -1;
         }

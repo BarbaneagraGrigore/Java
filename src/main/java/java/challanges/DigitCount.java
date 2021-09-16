@@ -1,6 +1,6 @@
-package javaChallanges;
+package java.challanges;
 
-public class GetDigitCount {
+public class DigitCount {
     public static int getDigitCount(int number) {
         if (number < 1) {
             return -1;

@@ -1,6 +1,6 @@
-package javaChallanges;
+package java.challanges;
 
-public class PrintedNumbersWhileLoop {
+public class NumbersWhileLoop {
     public static void displayWithWhileLoop(int number) {
         int i = 0;
         while (i <= number) {

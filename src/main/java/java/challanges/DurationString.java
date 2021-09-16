@@ -1,4 +1,4 @@
-package javaChallanges;
+package java.challanges;
 
 public class DurationString {
     private static final String INVALID_VALUE_MESSAGE = "Invalid value";

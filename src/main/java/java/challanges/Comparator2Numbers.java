@@ -1,4 +1,4 @@
-package javaChallanges;
+package java.challanges;
 
 public class Comparator2Numbers {
     public static void findMaxMin(int number, int number2) {

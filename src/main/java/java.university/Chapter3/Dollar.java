@@ -2,7 +2,7 @@ package java.university.Chapter3;
 
 import java.util.Scanner;
 
-public class MakeOneDollar {
+public class Dollar {
     public static void main(String[] args) {
         double penny = 0.01;
         double nickels = 0.05;

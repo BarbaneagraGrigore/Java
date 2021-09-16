@@ -2,7 +2,7 @@ package java.university.Chapter4;
 
 import java.util.Random;
 
-public class RollTheDice {
+public class DiceRoller {
     public static void main(String[] args) {
         int lastSpace = 20;
         int currentSpace = 0;

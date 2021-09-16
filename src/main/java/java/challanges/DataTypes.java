@@ -1,4 +1,4 @@
-package javaChallanges;
+package java.challanges;
 
 public class DataTypes {
     public static void typeDataTypes(int number) {

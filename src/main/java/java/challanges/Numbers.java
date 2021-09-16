@@ -1,6 +1,6 @@
-package javaChallanges;
+package java.challanges;
 
-public class PrintedNumbers {
+public class Numbers {
 
     public static void printNumbers(int input){
 

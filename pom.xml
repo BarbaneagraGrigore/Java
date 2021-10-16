@@ -12,10 +12,12 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <restAshured>4.4.0</restAshured>
-        <gson>LATEST</gson>
-        <selenium-chrome-driver>LATEST</selenium-chrome-driver>
+        <gson>2.8.8</gson>
+        <selenium-chrome-driver>3.141.59</selenium-chrome-driver>
         <selenium-java>3.141.59</selenium-java>
-        <junit-jupiter>RELEASE</junit-jupiter>
+        <junit-jupiter>5.8.1</junit-jupiter>
+        <json>20210307</json>
+        <jackson-databind>2.13.0</jackson-databind>
     </properties>
 
     <profiles>
@@ -37,6 +39,18 @@
     </profiles>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${json}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -68,6 +82,12 @@
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-jupiter}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.4.0</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

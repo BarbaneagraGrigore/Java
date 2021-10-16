@@ -1,3 +1,5 @@
+package serialization;
+
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.FileInputStream;
@@ -45,7 +47,7 @@ public class XML {
 
     @Override
     public String toString() {
-        return "XML{" +
+        return "serialization.XML{" +
                 "fieldOne=" + fieldOne +
                 ", fieldTwo='" + fieldTwo + '\'' +
                 ", fieldThree=" + fieldThree +
@@ -72,12 +74,12 @@ public class XML {
     }
 }
 //         run in main
-//        XML settings = new XML();
+//        serialization.XML settings = new serialization.XML();
 //        settings.setFieldOne(1);
 //        settings.setFieldTwo("Grigore Barbăneagră");
 //        settings.setFieldThree(true);
 //        serializeToXML(settings);
 //
-//        XML loadedForm = deserializeFromXML();
+//        serialization.XML loadedForm = deserializeFromXML();
 //        System.out.println(loadedForm);
 

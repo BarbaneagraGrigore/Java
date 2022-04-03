@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 public class Swiper {
     public static void swipeNumbers(int number, int number2) {

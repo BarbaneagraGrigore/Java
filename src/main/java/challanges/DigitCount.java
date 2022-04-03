@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 public class DigitCount {
     public static int getDigitCount(int number) {

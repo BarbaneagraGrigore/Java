@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 public class SquareStar {
     public static void printSquareStar(int number) {

@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 public class NumbersWhileLoop {
     public static void displayWithWhileLoop(int number) {

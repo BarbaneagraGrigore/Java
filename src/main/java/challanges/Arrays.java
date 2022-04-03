@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 import java.util.Random;
 

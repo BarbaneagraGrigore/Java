@@ -1,4 +1,4 @@
-package java.challanges;
+package challanges;
 
 public class Point {
     private int x;

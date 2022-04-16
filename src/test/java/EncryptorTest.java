@@ -6,11 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class EncryptorTest {
     @Test
     public void checkBooleanResult() {
-        String text = "The journey of a thousand miles begins with one step. Lao Tzu";
-        String actualResult = Encrypter.textEncryption(text);
-        String expectedResult = "Teuewtz hyssieu eoabtp jfneh. oadgoL utmina rhineo nolssT ";
+        String text = "have a nice day";
+        String expectedResult = "hae and via ecy ";
 
-        assertEquals(expectedResult, actualResult);
+        assertEquals(expectedResult, Encrypter.encryptText(text));
     }
-
 }
